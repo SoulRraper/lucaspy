@@ -14,18 +14,18 @@
 
 
 #calcular el iva para cada compra
-print(
-'''
-1.- Pera 1200
-2.- Manzana 1400
-3.- Piña 2000
-''')
-selec=int(input("seleccione una fruta: "))
-if selec==1:
-    print("el total a apagar es", 1200*1.19)
-elif selec==2:
-    print("el total a apagar es", 1400*1.19)
-elif selec==3:
-    print("el total a apagar es", 2000*1.19)
-else:
-    print("numero no valido")
+# print(
+# '''
+# 1.- Pera 1200
+# 2.- Manzana 1400
+# 3.- Piña 2000
+# ''')
+# selec=int(input("seleccione una fruta: "))
+# if selec==1:
+#     print("el total a apagar es", 1200*1.19)
+# elif selec==2:
+#     print("el total a apagar es", 1400*1.19)
+# elif selec==3:
+#     print("el total a apagar es", 2000*1.19)
+# else:
+#     print("numero no valido")
