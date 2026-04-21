@@ -25,18 +25,18 @@
 # calcular el promedio de todas las notas
 # mostrar si aprueba o no
 
-notas=int(input("ingrese la cantidad de notas: "))
-suma=0
-for i in range(notas):
-    n=float(input(f"ingrese la nota {i+1}:"))
-    suma=suma+n
-prom=suma/notas
-print("el promedio es",round (prom, 1))
+# notas=int(input("ingrese la cantidad de notas: "))
+# suma=0
+# for i in range(notas):
+#     n=float(input(f"ingrese la nota {i+1}:"))
+#     suma=suma+n
+# prom=suma/notas
+# print("el promedio es",round (prom, 1))
 
-if prom>=4:
-    print("alumno aprobado")
-else:
-    print("alumno reprobado")
+# if prom>=4:
+#     print("alumno aprobado")
+# else:
+#     print("alumno reprobado")
 
 
 
