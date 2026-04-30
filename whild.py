@@ -11,8 +11,9 @@
 # print("ingresado correctamente")
 # pedir un numero al ususario y mostrar 
 # su tabla de multiplicar
+
 num=int(input("ingre un numero: "))
 c=1
 while c<=10:
- print(f"{num}x{c}=")
+ print(f"{num}x{c}= ")
 
