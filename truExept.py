@@ -54,36 +54,77 @@
 # total=0
 # while op!=4:
 
-while True:
+# while True:
+#     try:
+#         notas=int(input("Ingrese la cant de notas: "))
+#         break
+#     except:
+#         print("solo numeros enteros")
+
+# suma=0
+# for i in range(notas):
+#     while True:
+#         try:
+#          n=float(input(f"Ingrese la nota {i+1}: "))
+#          break
+#         except: ValueError
+#         print("solo numeros enteros")
+#         suma=suma+n
+#             # suma+=n
+#     prom=suma/notas
+#     print("El promedio es",round(prom,1) )
+
+#     if prom>=4:
+#             print("Alumno aprobado")
+#     else:
+#             print("Alumno reprobado")
+
+#     #sumatoria
+
+
+#     num=int(input("Ingrese un numero: "))
+#     total=0
+#     for i in range(num):
+#         total=total+i+1
+#     print(f"El resultado es {total}")
+
+
+# correjir
+# notas=int(input("Ingrese la cant de notas: "))
+# suma=0
+# for i in range(notas):
+#     n=float(input(f"Ingrese la nota {i+1}: "))
+#     suma=suma+n
+#     # suma+=n
+# prom=suma/notas
+# print("El promedio es",round(prom,1) )
+
+# if prom>=4:
+#     print("Alumno aprobado")
+# else:
+#     print("Alumno reprobado")
+
+# #sumatoria
+
+
+# num=int(input("Ingrese un numero: "))
+# total=0
+# for i in range(num):
+#     total=total+i+1
+# print(f"El resultado es {total}")
+
+totalingresos=0
+
+pasajes=int(input("cuantos pasajes deseas vender "))
+for i in range(pasajes):
     try:
-        notas=int(input("Ingrese la cant de notas: "))
-        break
+        precio=int(input(f"ingrese el precio de los pasajes {i+1}: "))
+        totalingresos+=precio
     except:
-        print("solo numeros enteros")
-
-suma=0
-for i in range(notas):
-    while True:
-        try:
-         n=float(input(f"Ingrese la nota {i+1}: "))
-         break
-        except: ValueError
-        print("solo numeros enteros")
-        suma=suma+n
-            # suma+=n
-    prom=suma/notas
-    print("El promedio es",round(prom,1) )
-
-    if prom>=4:
-            print("Alumno aprobado")
-    else:
-            print("Alumno reprobado")
-
-    #sumatoria
+        print("error necesitas proporcionar un valor numerico valido")
+        break
+print("el total de ingresos por la venta de pasajes es:", totalingresos)
 
 
-    num=int(input("Ingrese un numero: "))
-    total=0
-    for i in range(num):
-        total=total+i+1
-    print(f"El resultado es {total}")
+
+
