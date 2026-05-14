@@ -90,41 +90,86 @@
 
 
 # correjir
-# notas=int(input("Ingrese la cant de notas: "))
-# suma=0
-# for i in range(notas):
-#     n=float(input(f"Ingrese la nota {i+1}: "))
-#     suma=suma+n
+# while True:
+#    try:
+#     notas=int(input("Ingrese la cant de notas: "))
+#     suma=0
+#     for i in range(notas):
+#         n=float(input(f"Ingrese la nota {i+1}: "))
+#         break
+#    except: ValueError
+#    suma=suma+n
 #     # suma+=n
-# prom=suma/notas
-# print("El promedio es",round(prom,1) )
+#    prom=suma/notas
+#    print("El promedio es",round(prom,1) )
 
-# if prom>=4:
+#    if prom>=4:
 #     print("Alumno aprobado")
-# else:
+#    else:
 #     print("Alumno reprobado")
 
-# #sumatoria
+#     #sumatoria
 
 
-# num=int(input("Ingrese un numero: "))
-# total=0
-# for i in range(num):
-#     total=total+i+1
-# print(f"El resultado es {total}")
+#     num=int(input("Ingrese un numero: "))
+#     total=0
+#     for i in range(num):
+#         total=total+i+1
+#     print(f"El resultado es {total}")
 
-totalingresos=0
+# totalingresos=0
 
-pasajes=int(input("cuantos pasajes deseas vender "))
-for i in range(pasajes):
-    try:
-        precio=int(input(f"ingrese el precio de los pasajes {i+1}: "))
-        totalingresos+=precio
-    except:
-        print("error necesitas proporcionar un valor numerico valido")
-        break
-print("el total de ingresos por la venta de pasajes es:", totalingresos)
+# pasajes=int(input("cuantos pasajes deseas vender "))
+# for i in range(pasajes):
+#     try:
+#         precio=int(input(f"ingrese el precio de los pasajes {i+1}: "))
+#         totalingresos+=precio
+#     except:
+#         print("error necesitas proporcionar un valor numerico valido")
+#         break
+# print("el total de ingresos por la venta de pasajes es:", totalingresos)
 
+saldo=100000
+op=0
+while True:
+   try:
+    op=int(input( '''
+                        --- CAJERO ---
+                        1.- ver saldo
+                        2.- retirar
+                        3.- depositar
+                        4.- salir
+                        '''))
+   except ValueError:
+     print("ese no es un numero. intenta de nuevo")
+
+   if op==1:
+        print("tu saldo es", saldo)
+        
+   elif op==2:
+    monto = int(input("cunto quieres retirar "))
+    
+    if monto > saldo:
+      print("no tienes suficiente dinero")
+    elif monto % 5000!=0:
+      print("solo puedes retirar multiplos de 5000")
+    else:
+      saldo-=monto
+      print("listo. saldo ahora:", saldo)
+
+   elif op==3:
+    monto = int(input("cuanto quieres depositar "))
+    if monto % 5000 !=0:
+      print("solo puedes depositar multiplos de 5000")
+    else:
+      saldo+=monto
+      print("listo. Saldo ahora:", saldo)
+    
+   elif op == 4:
+     print("saliendo")
+     break
+   else:
+     print("opcion invalida")
 
 
 
