@@ -36,3 +36,21 @@
 #     print("solo puedes escribir 'nacional o 'internacional' con minnusculas")
 
 # if peso<5
+
+# code=4545
+# while True:
+#     pasw=int(input("ingrese su codigo de 4 digitos"))
+#     if pasw==code:
+#         print("codigo aceptado")
+#         break
+#     else:
+#         print("codigo incorrecto")
+
+#colectivo feminista
+# while True:
+#     sex=input("ingrese su sexo (f/m)").lower()
+#     if sex == "m":
+#         print("NO se puede acceder")
+#     else:
+#         print("adelante")
+#         break
