@@ -25,47 +25,47 @@
 
 # Calculadora
 # + - * /
-# def suma():
-#  n1=int(input("ingrese un numero"))
-#  n2=int(input("ingrese otro numero"))
-#  print(f"el resultado es{n1+n2}")
+def suma():
+ n1=int(input("ingrese un numero"))
+ n2=int(input("ingrese otro numero"))
+ print(f"el resultado es{n1+n2}")
 
-# def resta():
-#  n1=int(input("ingrese un numero"))
-#  n2=int(input("ingrese otro numero"))
-#  print(f"el resultado es{n1-n2}")
+def resta():
+ n1=int(input("ingrese un numero"))
+ n2=int(input("ingrese otro numero"))
+ print(f"el resultado es{n1-n2}")
 
-# def multiplicacion():
-#   n1=int(input("ingrese un numero"))
-#   n2=int(input("ingrese otro numero"))
-#   print(f"el resultado es{n1*n2}")
+def multiplicacion():
+  n1=int(input("ingrese un numero"))
+  n2=int(input("ingrese otro numero"))
+  print(f"el resultado es{n1*n2}")
 
-# def division():
-#   n1=int(input("ingrese un numero"))
-#   n2=int(input("ingrese otro numero"))
-#   print(f"el resultado es{n1/n2}")
+def division():
+  n1=int(input("ingrese un numero"))
+  n2=int(input("ingrese otro numero"))
+  print(f"el resultado es{n1/n2}")
 
-# def calculadora():        
-#     op=0
-#     while op!=5:
-#         print("1.- suma")
-#         print("2.- resta")
-#         print("3.- multiplicacion")
-#         print("4.- division")
-#         print("5- salir")
-#         print("seleccione una opcion")
-#         op=int(input())
-#         match op:
-#             case 1:
-#              suma()
-#             case 2:
-#              resta()
-#             case 3:
-#              multiplicacion()
-#             case 4:
-#              division()
-#             case 5:
-#              print("saliendo")
+def calculadora():        
+    op=0
+    while op!=5:
+        print("1.- suma")
+        print("2.- resta")
+        print("3.- multiplicacion")
+        print("4.- division")
+        print("5- salir")
+        print("seleccione una opcion")
+        op=int(input())
+        match op:
+            case 1:
+             suma()
+            case 2:
+             resta()
+            case 3:
+             multiplicacion()
+            case 4:
+             division()
+            case 5:
+             print("saliendo")
 
 
 # def tablademultiplicar ():
@@ -161,32 +161,32 @@
 #       case _:
 #        print()
 
-import random
+# import random
 
-codigo=random.randint(7000,2100)
-print("codigo:" , codigo)
-tipo=input("ingrese tipo de entrada - vip, general o tribuna:")
+# codigo=random.randint(7000,2100)
+# print("codigo:" , codigo)
+# tipo=input("ingrese tipo de entrada - vip, general o tribuna:")
 
-precio_base=40000
+# precio_base=40000
 
-if tipo=="vip":
-    precio_final=precio_base*1.8
-elif tipo=="general":
-    precio_final=precio_base*1.4
-elif tipo=="tribuna":
-    precio_final=precio_base*1.2
-else:
-    print("tipo de entrada no valido")
-    precio_final=0
+# if tipo=="vip":
+#     precio_final=precio_base*1.8
+# elif tipo=="general":
+#     precio_final=precio_base*1.4
+# elif tipo=="tribuna":
+#     precio_final=precio_base*1.2
+# else:
+#     print("tipo de entrada no valido")
+#     precio_final=0
 
-if precio_final>0:
+# if precio_final>0:
 
- if 7000 <= codigo <= 1200:
-    descuento=precio_final*0.9
-    precio_final=precio_final-descuento
-    print("codigo valido se aplica 0.9 descuento")
+#  if 7000 <= codigo <= 1200:
+#     descuento=precio_final*0.9
+#     precio_final=precio_final-descuento
+#     print("codigo valido se aplica 0.9 descuento")
 
-print("valor a pagar:" , int(precio_final))
+# print("valor a pagar:" , int(precio_final))
    
    
 
