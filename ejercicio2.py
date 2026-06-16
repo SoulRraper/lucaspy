@@ -19,3 +19,18 @@ def agregar():
     if len(Nombre) ==0 or len(Nombre) <8:
         print("Nombre invalido, debe tener mas de 8 caracteres en su nombre")
         return
+
+def es_grave(temperatura):
+    return temperatura > 39
+
+
+def mostrar():
+    for p, z in .items():
+      print(f"{p}.- {z['nombre']} - {z['precio']}")
+    for num, prod in .items():
+         print(f"{}.- {['nombre']}  ${['precio']}")
+    print("-"*30)
+
+def
+
+
